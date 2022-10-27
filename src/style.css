@@ -1,3 +1,4 @@
+
 /* CSS Custom Properties Definitions */
 
 :root {
@@ -85,6 +86,7 @@ body {
 
 footer {
   padding: var(--spacing-6) var(--spacing-0);
+  margin-top: -4rem; 
 }
 
 hr {
@@ -251,13 +253,68 @@ a:focus {
 }
 
 .global-header {
+  display:flex;
+  margin-top: -40px;
   margin-bottom: var(--spacing-12);
 }
 
-.main-heading {
-  font-size: var(--fontSize-7);
-  margin: 0;
+
+.titleLW {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
 }
+
+
+/*Testing */
+.navbar1 {
+  display: flex;
+  flex-flow: row;
+  margin-left: 0px;
+  margin-right:auto;
+  white-space: nowrap;
+  line-height: var(--lineHeight-tight)
+ 
+
+}
+
+.navbar1 navbar-item {
+width:100%; 
+text-align: center;
+}
+
+
+.navbar1 navbar-item ul {
+  list-style-type: none;
+}
+
+.navbar1 navbar-item ul li {
+  display: inline-block;  
+  
+  margin: 1rem;
+}
+
+
+
+/* End Test */
+
+
+.divider {
+  margin-top: -5.2rem;
+}
+
+.headerAdjusted {
+margin-top: 0px; 
+margin-bottom: 1rem;
+}
+
+.main-heading {
+
+  font-size: var(--fontSize-7);
+}
+
+
 
 .post-list-item {
   margin-bottom: var(--spacing-8);
@@ -302,6 +359,10 @@ a:focus {
   border-radius: 100%;
 }
 
+.blog-post {
+  margin-top: var(--spacing-20)
+}
+
 .blog-post header h1 {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
 }
@@ -330,4 +391,164 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+}
+
+@media only screen and (max-width: 488px) {
+  .global-header {
+    flex-flow: row wrap;
+    
+  }
+  .navbar1 {
+    margin:auto;
+    font-size:x-large;
+  }
+
+  .navbar1 ul {
+    margin-bottom:0px;
+  }
+  .navbar {
+    margin-right:auto !important;
+    margin-top:0px;
+  }
+
+ .navbar ul {
+  margin-top:-1rem;
+ }
+}
+
+/* Bio Styles*/
+.bio {
+  margin-top: 4rem; 
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+.bio .gatsby-image-wrapper .img {
+ position: relative;
+ overflow: hidden;
+}
+
+.description {
+  max-width: 70%;
+  margin-left: 1rem;
+}
+
+
+
+@media only screen and (max-width: 646px) {
+
+    .description {
+      max-width: 60%;
+    }
+  }
+
+  @media only screen and (max-width: 494px) {
+  .bio-avatar {
+    margin:auto;
+    margin-bottom: 4rem;
+  }
+  .description {
+    max-width: 100%;
+  }
+   }
+
+   .titleLW2 {
+     font-size: x-large;
+     color:black;
+     text-align: center;
+     margin-bottom: 0.5rem !important;
+   }
+
+   .newsletterbox {
+    background: linear-gradient(#fcfaf9, #fdfbf9);
+    border: 1px solid #d5d3d1;
+    margin-top: 4rem;
+    padding: 2%;
+    box-shadow: 0px 0px 5px #D5D3D1;
+    border-radius: 3px;
+    clear: both;
+    flex-grow: 1;
+   }
+
+ 
+
+   .inputsForm {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+ 
+
+
+.submitbutton {
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.revue-form-group {
+  background: #FDFCFB;
+  margin-right:0.3rem;
+}
+
+.revue-form-field {
+  padding: 5px;
+}
+
+.revue-form-footer {
+ 
+  margin-top: 0.3rem;
+  width: 100%;
+  margin-bottom: 0.3rem;
+  font-size: xx-small;
+  text-align: center;
+}
+
+
+
+@media only screen and (max-width: 415px) {
+
+  
+  
+  .inputsForm{
+    flex-flow: wrap;
+  }
+  .submitbutton {
+    margin-top:0.3rem;
+  }
+}
+
+.projects {
+  margin-top: 3rem; 
+}
+
+.projects ul {
+  padding-left: 2rem; 
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }

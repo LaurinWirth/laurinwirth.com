@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    flex-flow: row;
+    margin-left: auto;
+    margin-right:0px;
+    white-space: nowrap;
+    line-height: var(--lineHeight-tight)
+   
+
+}
+
+.navbar-item {
+width:100%; 
+text-align: center;
+}
+
+
+
+
+.navbar-item ul {
+    list-style-type: none;
+  }
+
+  .navbar-item ul li {
+    display: inline-block;   
+    margin: 1rem;
+}
+
+.navbar ul li:hover {
+    color: #cb0061;
+}
