@@ -1,5 +1,4 @@
 import React from 'react'
-import './businesses.css'
 
 export default function Businesses() {
   return (
