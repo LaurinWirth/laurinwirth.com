@@ -17,11 +17,13 @@ export default function Businesses() {
      plan for runners. Take the guessing work out of your running preperation and get actionable advice to stay injury free.  
      </li>
 
-     <li><a href='https:/dinner-friends.carrd.co/' target="_blank">Dinner Friends</a> - Bringing together locals from 
+     <li>
+      
+      <a href='https://dinner-friends.carrd.co/' target="_blank">Dinner Friends</a> - Bringing together locals from 
      Vienna and people who fled from the Ukraine over a homecooked meal.  
      </li>
      
-     <li><a href='https:/bettercopy.xyz/' target="_blank">Better Copy</a> - Check your landing page for language that doesn't convert. 
+     <li><a href='https://bettercopy.xyz/' target="_blank">Better Copy</a> - Check your landing page for language that doesn't convert. 
 
      </li>
 
