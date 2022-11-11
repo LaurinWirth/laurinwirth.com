@@ -3,15 +3,12 @@ import { Link } from 'gatsby';
 import './navbar.css'
 
 const Navbar = (props) => {
-    const navMenuItem = ["Articles", "Projects", "Twitter"];
+    const navMenuItem = ["Projects", "Twitter"];
 
     const navMenuLiTag = navMenuItem.map((item) => {
         let pageLink = "";
          
-        if (item === "Articles") {
-            pageLink = "/Articles/";
-        }
-        else if (item === "Projects") {
+        if (item === "Projects") {
             pageLink ="/Projects/"
         }
         else if (item === "Twitter") {
