@@ -1,7 +1,7 @@
  import * as React from "react"
  import { useStaticQuery, graphql } from "gatsby"
  import { StaticImage } from "gatsby-plugin-image"
- import Newsletter from "./Newsletter"
+import Newsletter from "./Newsletter"
  
  const Bio = () => {
    const data = useStaticQuery(graphql`
